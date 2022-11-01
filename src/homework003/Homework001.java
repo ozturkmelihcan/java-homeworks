@@ -7,27 +7,22 @@ public class Homework001 {
 		// BULAN PROGRAM.
 		// int nums[] = {1 ,13,13,15,13,2,5,6,13,1}
 
-		int nums[] = { 1, 13, 13, 15, 13, 2,5,6,13, 5, 6, 13, 1, 13, 1,15 };
-		
+		int nums[] = {1, 13, 13, 13, 2, 5, 13, 1};
+
 		int toplam = 0;
-		
-		
+
 		for (int i = 0; i < nums.length; i++) {
-				if(nums[i]==13) {
+			if (nums[i] == 13) {
+				i++;
+				while (nums[i] == 13) {
 					i++;
-					while(nums[i]==13) {
-						i++;
-					}
-					
-					
-				}else
-					toplam=toplam+nums[i];
-			
-			
-			}
-			System.out.println(toplam);
+				}
+
+			} else
+				toplam = toplam + nums[i];
+
 		}
-		
+		System.out.println(toplam);
 	}
 
-
+}

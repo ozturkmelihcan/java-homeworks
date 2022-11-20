@@ -124,7 +124,7 @@ public class Penguen extends Hayvan {
 	public void acikiyor() {
 		if (aclikDurumu <= 50) {
 			System.out.println(getIsim() + " isimli penguen koşuyor...");
-			dayaniklilik = 2;
+			dayaniklilik += 2;
 			aclikDurumu += 2;
 			System.out.println("Güncel dayaniklilik: " + dayaniklilik + " Güncel açlık durumu: " + aclikDurumu);
 		} else {
